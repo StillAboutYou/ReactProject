@@ -16,7 +16,7 @@ const Services = () => {
     dispatch(fetchServices());
   }, [dispatch]);
 
-  if (loading) return <h2>Загрузка...</h2>;
+  if (loading) return   <center><h1>Загрузка...</h1></center>;
   if (error) return <h2>Произошла ошибка: {error}</h2>;
 
   return (

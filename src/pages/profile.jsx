@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchCurrentUser } from '../components/userService';
-
+import './profile.css'; // Подключение ваших стилей
+import { Text } from '@consta/uikit/Text'; // Импорт компонента Text из @consta
 
 const Profile = () => {
   const { id } = useParams(); 
@@ -29,25 +30,30 @@ const Profile = () => {
 
 
   if (error) {
-    return <p>{error}</p>;
+    return <Text>{error}</Text>;
   }
 
 
   if (!profileData) {
-    return <p>Загрузка...</p>;
+    return <center><h1>Загрузка...</h1></center>
   }
 
 
   if (profileData.id !== Number(id)) {
-    return <p>Ошибка доступа к профилю</p>; 
+    return <Text>Ошибка доступа к профилю</Text>; 
   }
 
   return (
-    <div className="profile">
-      <h1>Профиль пользователя {profileData.name}</h1>
-      <p>ID: {profileData.id}</p>
-      <p>Имя: {profileData.name}</p>
-      <p>Email: {profileData.email}</p>
+    <div className="profile" style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ marginRight: "20px" }}>
+        <h1>Профиль пользователя {profileData.name}</h1>
+        <Text>ID: {profileData.id}</Text>
+        <Text>Имя: {profileData.username}</Text>
+        <Text>Email: {profileData.email}</Text>
+      </div>
+      <div>
+        <img src={profileData.image} alt={`Профиль ${profileData.name}`} style={{ height: "150px", borderRadius: "75px" }} />
+      </div>
     </div>
   );
 };

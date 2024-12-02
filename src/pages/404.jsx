@@ -2,7 +2,8 @@ import React from 'react';
 
 
 const NotFound = () => {
-  return <h1>404 - Страница не найдена</h1>;
+  return<center><h1>404 - Страница не найдена</h1></center>;
+
 };
 
 export default NotFound;
