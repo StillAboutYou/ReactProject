@@ -1,0 +1,37 @@
+/* src/styles.css */
+
+body {
+
+    margin: 0; /* Убираем отступы по умолчанию */
+
+    padding: 0;
+
+    box-sizing: border-box; /* Включаем box-sizing для удобства */
+
+}
+
+
+.container {
+
+    display: flex;
+
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+
+    background-color: gray; /* Цвет фона для пустого пространства */
+
+    height: 100vh; /* Высота 100% от высоты видимой области */
+
+}
+
+
+.content {
+
+    background-color: white; /* Цвет фона контента */
+
+    margin: 0 10px; /* Отступы между контентом и краями */
+
+    width: 80%; /* Занимает 60% ширины окна */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Небольшая тень для эффекта */
+
+}
