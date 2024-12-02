@@ -1,47 +1,60 @@
-/* src/layouts/Layout.css */
+  .header, .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f8f8;
+    }
+    
+    .nav-left, .nav-right {
+      display: flex;
+    }
+    
+    
+    .button {
+      padding: 10px 20px; 
+      margin-right: 10px; 
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      border: 1px solid #ccc; 
+      border-radius: 4px;
+      transition: background-color 0.3s; 
+    }
 
+    .ButtonLogOut{
+      padding: 13px 20px;
+      margin-right: 10px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      background-color: rgb(31, 53, 216); 
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
 
-.header, .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8; /* Цвет фона для header и footer */
-  }
-  
-  .nav-left, .nav-right {
-    display: flex;
-  }
-  
-  
-  .button {
-    padding: 10px 20px; /* Размер кнопки */
-    margin-right: 10px; /* Отступ между кнопками */
-    text-decoration: none;
-    color: black;
-    background-color: white; /* Цвет фона кнопки */
-    border: 1px solid #ccc; /* Рамка кнопки */
-    border-radius: 4px; /* Уголки кнопок */
-    transition: background-color 0.3s; /* Плавный переход цвета */
-  }
-  
-  
-  .button.rounded {
-    border-radius: 20px; /* Закругление для кнопки ФИО */
-  }
-  
-  
-  .button.active {
-    background-color: blue; /* Цвет активной кнопки */
-    color: white; /* Цвет текста активной кнопки */
-  }
-  
-  .footer {
-    margin-top: 10px; /* Отступ сверху для footer */
-  }
-  
-  
-  .footer p {
-    margin: 0; /* Убираем отступы у текста в footer */
+    .main{
+      padding: 20px 30px;
+      min-height: 80vh;
+    }
+    
+    
+    .button.rounded {
+      border-radius: 20px; 
+    }
+    
+    
+    .button.active {
+      background-color: blue; 
+      color: white;
+    }
+    
+    .footer {
+      margin-bottom: 0px;
+    }
+    
+    
+    .footer p {
+      margin: 0; 
 
-  }
+    }

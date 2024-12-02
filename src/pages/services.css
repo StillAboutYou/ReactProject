@@ -1,0 +1,25 @@
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-card{
+    width: 30%;
+    border: 2px solid #2a5d00;
+    padding: 10px;
+    padding: 20px 30px;
+    box-shadow: 7px -10px teal;
+}
+
+.service-card:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.h3{
+    margin: 0px;
+}
