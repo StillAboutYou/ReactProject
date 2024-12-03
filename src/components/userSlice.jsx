@@ -23,7 +23,6 @@ const userSlice = createSlice({
     },
     logout: (state) => {
       state.user = null;
-
       state.username = null;
       state.id = null;
       state.accessToken = null;

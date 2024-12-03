@@ -25,7 +25,7 @@ import { login } from '../../components/userSlice';
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
-  return isAuthenticated ? children : <Navigate to="/login" />;
+  return isAuthenticated ? children : <Navigate to="/" />;
 };
 
 
